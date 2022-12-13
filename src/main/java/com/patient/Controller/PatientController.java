@@ -33,6 +33,7 @@ public class PatientController {
 	
 	@GetMapping("/{patientId}")
 	public ResponseTemplateVo getPatientWithDoctor(@PathVariable int patientId) {
+		System.out.println("getting the patientId");
 		return patientService.getPatientWithDoctor(patientId);
 		
 	}
